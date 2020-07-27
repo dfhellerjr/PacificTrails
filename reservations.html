@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pacific Trails Resort</title>
+		<meta charset="utf-8">
+		<link href="styles/pacific.css" rel="stylesheet">
+		<style type="text/css">
+			.asterix
+			{
+				color: red;
+				vertical-align: super;
+			}
+			.included
+			{
+				font-size: .7em;
+				font-style: italic;
+				font-weight: bold;
+				margin-left: 30px;
+				margin-bottom: -10px;
+			}		
+			.deposit
+			{				
+				padding-top: 10px; 
+				font-size: .7em;
+				font-style: italic;
+				font-weight: bold;
+				margin-top: -20px;
+				margin-bottom: 20px;
+			}
+			.top
+			{
+				padding-top: 4px;
+			}
+			#checkin
+			{
+				position: absolute;		
+				top: 660px;
+				left: 800px;
+			}
+			.checkin
+			{
+				position: absolute;
+				top: 1010px;
+				left: 900px;
+				color: red;
+			}
+			input[type=button] 
+			{
+				margin-left: 220px;
+			}
+			/* Custom alert box */
+			#dialogOverlay
+			{
+				display: none;
+				opacity: 0.8;				
+				position: fixed;
+				top: 0px;
+				left: 0px;
+				background: #FFF;
+				width: 100%;					
+				z-index: 10;				
+			}
+			#dialogBox
+			{
+				display: none;
+				position: fixed;
+				background: #000;
+				border-radius: 7px;
+				width: 550px;
+				z-index: 100;			
+			}
+			#dialogBox > div 
+			{
+				background: #FFF;
+				margin: 8px;
+			}
+			#dialogBox > div > #dialogBoxHead
+			{
+				background: #90E1FC;
+				font-size: 19px;
+				padding: 10px;
+				color: #000033;			
+			}
+			#dialogBox > div > #dialogBoxBody
+			{
+				background:#333;
+				padding: 20px;
+				color: #FFF;			
+			}
+			#dialogBox > div > #dialogBoxFoot
+			{
+				background: #90E1FC;
+				padding: 10px;
+				text-align: right;			
+			}																
+		</style>		
+	</head>
+	<body onload = "alert('Today only - 10% off on weekend stays - coupon code ZenTen');">
+		<div id="dialogOverlay"></div>
+		<div id="dialogBox">
+			<div>
+				<div id="dialogBoxHead"></div>
+				<div id="dialogBoxBody"></div>
+				<div id="dialogBoxFoot"></div>
+			</div>
+		</div>	
+		<div id="wrapper">				
+			<h1 id="header">Pacific Trails Resort</h1>
+			<div id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="yurts.html">Yurts</a></li>
+					<li><a href="lodge".html">Lodge</a></li>
+					<li><a href="activities.html">Activities</a></li>
+					<li><a href="dining.html">Dining</a></li>
+					<li><a href="reservations.html">Reservations</a></li>
+					<li><a href="shop.html">Shop</a></li>
+				</ul>
+			</div>
+			<div id="main">
+				<div>
+					<h2>Reservations at Pacific Trails</h2>
+					<h3>Yurt Packages</h3>
+					<p>
+						A variety of luxury yurt packages are available. Choose from one of the packages below and complete the form to make your reservation today. Don't see an option that fits your needs? We'll be happy to build a custom package just for you! Just <a href="index.html">contact</a> us.
+					</p>
+					<table>
+						<tr id="package">
+							<th>Package Name</th>
+							<th>Description</th>
+							<th>Nights</th>
+							<th>Cost per Person</th>
+						</tr>
+						<tr>
+							<td>Weekend Escape</td>
+							<td class="text">
+								Two breakfasts<span class="asterix">*</span>, a trail map, picnic snacks
+							</td>
+							<td>2</td>
+							<td>$200</td>
+						</tr>
+						<tr>
+							<td>Zen Retreat</td>
+							<td class="text">
+								Four breakfasts<span class="asterix">*</span>, a trail map, a pass for daily yoga, picnic snacks
+							</td>
+							<td>4</td>
+							<td>$375</td>
+						</tr>
+						<tr>
+							<td>Kayak Away</td>
+							<td class="text">
+								Two breakfasts<span class="asterix">*</span>, three hours of kayak rental daily, a trail map, picnic snacks
+							</td>
+							<td>2</td>
+							<td>$250</td>
+						</tr>
+					</table>
+					<p class="included">
+						<span class="asterix">*</span>Daily in-yurt continental breakfast consisting of a basket of seasonally available, locally sourced fruits, freshly baked &nbsp;&nbsp;croissants/pastries, and one large carafe of our freshly brewed, custom-roasted Jamaican Blue Mountain coffee. A <br>&nbsp;&nbsp;genrous sample of our   house-crafted trail-mix is also provided each cay. A wider selection of
+						breakfast dishes is<br>&nbsp;&nbsp;also available at the Overlook Cafe (menu prices apply).						
+					</p>				
+				</div>
+				<br />
+				<div>					
+					<h3>Required information is marked with an asterix (<span>*</span>).</h3>			
+					<p class="deposit">
+						A deposit of $100.00 is required for all on-line reservations. Deposit 
+						is non-refundable unless your reservation is cancelled at least 48 hours 
+						prior to your scheduled arrival date.
+					</p>					
+					<form name="frmReservations" id="frmReservations" action="" method="post">
+						<label for="txtFirstName">First Name:<span class="asterix">*</span></label>
+						<input type="text" name="txtFirstName" id="txtFirstName" size="30" maxlength= "50">					
+						<label for="txtLastName">Last Name:<span class="asterix">*</span></label>
+						<input type="text" name="txtLastName" id="txtLastName" size="30" maxlength= "50">					                                       
+						<label for="txtEMail">E-Mail:<span class="asterix">*</span></label>
+						<input type="email" name="txtEMail" id="txtEMail" size="30" maxlength= "50">	<label for="txtPhone" class="top">Phone:</label>
+						<input type="tel" name="txtPhone" id="txtPhone" size="30" maxlength= "50">		<label for="dtmDate">Arrival Date:<span class="asterix">*</span></label>
+						<input type="date" name="dtmDate" id="dtmDate" size= "30">					
+						<label for="intNights" class="top">Nights:</label>
+						<input type="number" name="intNights" id="intNights" min="1" max="10" size="2" value="1">					
+						<label for="txtCardNumber">Credit Card #:<span class="asterix">*</span></label>
+						<input type="text" name="txtCardNumber" id="txtCardNumber" size="30" maxlength= "50">											
+						<label for="txtComments" class="top">Comments:</label>
+						<textarea name="txtComments" id="txtComments" rows="4" cols="30"></textarea>
+						<input type="button" name="btnSubmit" id="btnSubmit" value="Submit" 				onclick="IsValidData();">					
+					</form>
+				</div>
+				<img id="checkin" src="images/checkin.jpg" width="310" height="350" alt="Check-In">
+				<p class="checkin">Lobby/Reception</p>
+			</div>			
+			<div id="footer">Copyright &copy; 2020 Pacific Trails Resort<br>
+				<a href="mailto:pacifictrails@resorts.com">pacifictrails@resorts.com</a>
+			</div>			
+		</div>
+		<!-- ---------------------------- JavaScript ----------------------------------- -->
+		<script type="text/javascript">
+		
+			// Script-level variable
+			var m_strErrorMessage = "Please correct the following error(s):" + "<br />";			
+			var m_Alert = new CustomAlert();
+			var m_strConfirmationMessage = "Reservation Confirmed\n" + "<br /><br />" +
+				"- Your confirmation ticket will be sent to your Email" + "<br />" + "- address" + "<br /><br />" +
+				"Thank you for choosing our resort for your stay!\n";
+									
+			// ----------------------------------------------------------------
+            // Name: CustomAlert
+            // Abstract: Custom alert for confirmation message 
+            // ----------------------------------------------------------------
+			function CustomAlert()
+			{
+				try
+                {
+					var windowWidth = window.innerWidth;
+					var windowHeight = window.innerHeight;
+																		
+					this.render = function(dialog)
+					{						
+						var dialogOverlay = document.getElementById("dialogOverlay");
+						var dialogBox = document.getElementById("dialogBox");
+						var dialogBoxHead = document.getElementById("dialogBoxHead");
+						var dialogBoxBody = document.getElementById("dialogBoxBody");
+						var dialogBoxFoot = document.getElementById("dialogBoxFoot");
+						var btnSubmit = document.getElementById("btnSubmit");
+						
+						dialogOverlay.style.display = "block";
+						dialogBox.height = windowHeight +"px";											
+						dialogBox.style.display = "block";
+						dialogBox.style.left = (windowWidth/2) - (550 * .5)+"px";
+						dialogBox.style.top = "275px";											
+						dialogBoxHead.innerHTML = "Pacific Trails Resort";
+						dialogBoxBody.innerHTML = dialog;
+						dialogBoxFoot.innerHTML = '<button onclick="m_Alert.ok()">OK</button>';			btnSubmit.style.disabled = "true";
+					}					
+					this.ok = function()
+					{												
+						document.getElementById("dialogBox").style.display = "none";
+						document.getElementById("dialogOverlay").style.display = "none";
+						location.reload();			
+					}
+				}
+                catch (excError)
+                {
+                    alert("frmReservations::CustomAlert()\n"
+                         + excError.name + ', ' + excError.strValue);
+                }
+			}
+												
+			// ----------------------------------------------------------------
+            // Name: IsValidData
+            // Abstract: Is input data valid?
+            // ----------------------------------------------------------------
+            function IsValidData()
+            {			
+				var blnIsValidData = true;	// Easier to assume data is all good
+				         				
+				try
+                {
+					var blnIsValidCreditCard = true;
+					var blnIsValidDate = true;
+                    var frmReservations = document.getElementById("frmReservations");
+					var intCreditCardNumber = document.getElementById("txtCardNumber");					
+													
+					// Trim all text boxes & rmove spaces from within credit card number
+                    TrimAllFormTextBoxes(frmReservations);										
+					intCreditCardNumber = intCreditCardNumber.value.split(" ").join("");																			                    
+					// VALIDATE FIELDS
+					// First name
+                    if (frmReservations.txtFirstName.value == "")
+                    {												
+                        blnIsValidData = false;																		
+                        m_strErrorMessage += "--First name is required." + "<br />";
+                    }					
+					// Last name
+					if (frmReservations.txtLastName.value == "")
+                    {
+                        blnIsValidData = false;
+                        m_strErrorMessage += "--Last name is required." + "<br />";
+                    }
+					// Email Address
+					if (frmReservations.txtEMail.value == "")
+                    {
+                        blnIsValidData = false;
+                        m_strErrorMessage += "--Email address is required." + "<br />";
+                    }
+					else if (IsValidEmailAddress(frmReservations.txtEMail.value) == false)
+					{
+						blnIsValidData = false;
+                        m_strErrorMessage += "--Email address: Invalid format." + "<br />";
+					}
+					// Phone number
+					if (frmReservations.txtPhone.value != "")
+                    {
+						if (IsValidPhoneNumber(frmReservations.txtPhone.value) == false)
+						{
+							blnIsValidData = false;
+							m_strErrorMessage += "--Phone number: Invalid format." + "<br />";
+						}
+                    }																				
+					// Arrival date
+					if (frmReservations.dtmDate.value == "")
+					{
+						blnIsValidData = false;
+                        m_strErrorMessage += "--Arrival date is required." + "<br />";
+					}					
+					else if (IsValidArrivalDate(frmReservations.dtmDate.value) == false)
+					{
+						blnIsValidData = false;
+						m_strErrorMessage += "--Arrival date can not be earlier than today." + "<br />";
+					}
+					// Credit card number
+					if (intCreditCardNumber == "")
+					{
+						blnIsValidData = false;
+						m_strErrorMessage += "--$100 deposit is required." + "<br />";
+						m_strErrorMessage += "--Please enter your credit card number." + "<br />";	
+					}
+					else if (isNaN(intCreditCardNumber) == true) 
+					{	 
+						blnIsValidData = false;
+						m_strErrorMessage += "--Credit card number must contain only numbers." + "<br />"
+					}
+					else if (IsValidCreditCardNumber(intCreditCardNumber) == false)
+					{
+						blnIsValidData = false; 
+						m_strErrorMessage += "--Credit card number is invalid." + "<br />";
+					}
+										
+                    // Bad input data?
+                    if (blnIsValidData == false)
+                    {
+                        m_Alert.render(m_strErrorMessage);
+                    }
+					else
+					{						
+						// Custom alert			
+						m_Alert.render(m_strConfirmationMessage);						
+					}
+                }
+                catch (excError)
+                {
+                    alert("frmReservations::IsValidData()\n"
+                         + excError.name + ', ' + excError.strValue);
+                }
+                return blnIsValidData;
+            }												
+		</script>
+		<script type="text/javascript" src="scripts/pacific.js"></script>
+	</body>
+</html>

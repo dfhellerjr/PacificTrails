@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>		
+		<title>Pacific Trails Resort</title>
+		<meta charset="utf-8">
+		<link href="styles/pacific.css" rel="stylesheet" type="text/css">						
+		<style>
+			.disclaimer
+			{ 
+				font-size: .8em;
+				font-style: italic;
+				color: #5f5c5c;
+			}
+			#dis
+			{
+				color: #000033;
+			}
+			a
+			{
+				text-decoration: none;
+				color: black;				
+			}
+		</style>		
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1 id="header">Pacific Trails Resort</h1>
+			<div id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="yurts.html">Yurts</a></li>
+					<li><a href="lodge.html">Lodge</a></li>
+					<li><a href="activities.html">Activities</a></li>
+					<li><a href="dining.html">Dining</a></li>
+					<li><a href="reservations.html">Reservations</a></li>
+					<li><a href="shop.html">Shop</a></li>
+				</ul>
+			</div>
+			<div id="main">			
+				<h2>Enjoy Nature in Luxury</h2>
+				<a href="images/coast.jpg" onmouseover="document.getElementById('ocean').play();setVolume('ocean.mp3');">
+					<img src="images/coast.jpg" alt="coast" width="320" height="290">
+				</a>
+				<span class="resort">Pacific Trails Resort</span> offers a special lodging experience on the California Northern Coast. Relax in serenity with panoramic views of the Pacific Ocean.<br />
+				<ul>
+					<li>Private yurts with decks overlooking the ocean</li>
+					<li>Activities lodge with fireplace, lounge and gift shop</li>
+					<li>Fine dining and vistas at the Overlook Cafe</li>
+					<li>Heated 
+						<a href="images/pool2.jpg">
+							<em>outdoor pool</em> and <em>sauna bath</em>
+						</a>
+					</li>
+					<li>Guided hiking tours of the redwoods & kayaking</li>
+					<li>Convenient chair-lift from resort to beaches below</li>
+					<li>24/7 on-site security and concierge services</li>
+				</ul>
+				<p class="disclaimer">
+					<span id="dis">Pacific Trails</span> is an adults-only resort and can not accommodate children under 18 years of age. Occupancy is limited to four adults per yurt. For the comfort, safety and enjoyment of our patrons no exceptions can be made. The resort is closed from 12/1 - 3/1.
+				</p>
+				<div class="clear">
+					Pacific Trails Resort<br />
+					12010 Pacific Trails Road<br />
+					Zephyr, CA 95555<br />
+					888-555-5555<br />				
+				</div>				
+			</div>
+			<div id="audio">							
+				<audio id="ocean" 
+					<source src="media/ocean.mp3" type="audio/mpeg">
+				</audio>					
+			</div>
+			<div id="footer">
+				Copyright &copy;2020 Pacific Trails Resort<br />
+				<a href="mailto:pacifictrails@resorts.net">pacifictrails@resort.net</a>
+			</div>		
+		</div>
+		<script type="text/javascript">		
+			// ----------------------------------------------------------------
+			// Name: setVolume()
+			// Abstract: Set the volume for the audio controls
+			// ----------------------------------------------------------------
+			function setVolume(audioID)
+			{
+				var audio = document.getElementById(audioID);
+				audio.volume = 0.2; 		
+			}						
+		</script>
+	</body>
+</html>
+

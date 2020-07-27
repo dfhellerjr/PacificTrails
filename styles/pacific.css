@@ -1,0 +1,251 @@
+/* pacific.css */
+body 
+{ 
+	background-color: #ffffff;
+	color: #666666;
+	font-family: Verdana, Arial, sans-serif;	
+	background-image: url(images/background.jpeg);
+	padding: 0px 20px;
+}
+h2
+{
+	color: #3399CC;
+	font-family: Georgia, sans-serif;
+}
+h3
+{
+	color: #000033;
+}
+#wrapper
+{
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #90C7E3;
+	max-width: 1024px;
+	-webkit-box-shadow: 5px 5px 5px #828282;
+	-moz-box-shadow: 5px 5px 5px #828282;
+	box-shadow: 5px 5px 5px #828282;
+}
+/* For older browser compatability*/
+#header, #nav, #main, #footer
+{
+	display: block;
+}  
+#header 
+{ 
+	background-color: #000033;
+	color: #FFFFFF;
+	font-family: Georgia, sans-serif; 
+	line-height: 200%;
+	background-image: url(../images/sunset.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+	height: 72px;
+	padding-left: 20px;
+	margin-bottom: 0px;
+}
+/*nav*/
+#nav
+{
+	font-size: 18px;
+	font-weight: bold;
+	float: left;
+	width: 160px;
+	padding-top: 20px; 
+	padding-left: 15px;
+	padding-bottom: 0px;
+	padding-right:	5px; 	
+}
+#nav a
+{
+	text-decoration: none;
+}
+#nav a:link
+{
+	color: #000033;	
+}
+#nav a:visited
+{
+	color: #344873;
+} 
+#nav a:hover
+{
+	color: #FFFFFF;
+}
+#nav ul
+{
+	list-style-type: none;
+	margin: 0px;
+	padding-left: 0px;
+	padding-top: 55px;
+}
+#nav li
+{
+	margin-bottom: 20px;
+}
+/*main*/
+#main
+{
+	margin-top: 0px;
+	background-color: #ffffff;
+	margin-left: 170px;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 1px;
+}
+#main img
+{
+	float: left;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+#main video
+{
+	float: left;
+	margin-top: -50px;
+	margin-right: 10px;
+}
+#main ul
+{
+	list-style-position: inside;
+}
+.clear
+{
+	clear: both;
+}
+.resort
+{
+	color: #000033;
+	font-size: 1.1em;
+	font-style: italic;
+}
+/*tables*/
+table
+{
+	margin: auto;
+	width: 90%;
+	border-collapse: collapse;
+}
+th, tr, td
+{
+	border: 1px solid #3399cc;
+	padding: 5px;
+}
+tr:nth-of-type(even) 
+{ 
+	background-color:#E6FCFC; 
+}
+td
+{
+	text-align: center;
+}
+/*data lists*/
+dl
+{
+	padding-right: 5px;		
+}
+dt
+{
+	color: #000033;
+	font-weight: bold;
+}
+dd
+{
+	margin-bottom: 10px;
+}
+/*forms*/
+#package
+{
+	background-color:#90C7E3;
+}
+.text
+{
+	text-align: left;
+}
+label 
+{ 
+	float: left;
+	text-align: left;
+	display: inline-block;
+	xmargin-top: -5px;
+	width: 150px; 
+}
+input, textarea 
+{ 
+	margin-bottom: 7px; 
+	display: block;
+	border-style: groove;
+	border-width: 2px;
+	border-top-color: white;
+	border-left-color: white;
+	border-bottom-color: #A8A8A8;
+	border-right-color: #A8A8A8;
+	line-height: 22px;
+}
+input[type=submit], input[type=button]
+{
+	margin-top: 10px;
+	margin-left: 150px;
+	height: 30px;
+	width: 90px;
+	background: -moz-linear-gradient(#ffffff, #CCCCCC);
+	background: -webkit-linear-gradient(#ffffff, #CCCCCC);
+	background: -ms-linear-gradient(#ffffff, #CCCCCC);
+}
+span
+{
+	font-size: .9em;
+	color: red;
+}
+/*photo gallery*/
+#gallery
+{
+	position: relative;
+}
+#gallery ul
+{
+	height: 215px;
+	width: 290px;
+	list-style-type: none;
+	padding-right: 0px;
+}
+#gallery li
+{
+	display: inline-block;
+	padding: 10px;
+}
+#gallery img
+{
+	border-style: none;
+}
+#gallery a
+{
+	text-decoration: none;
+	color: #333;
+	font-style: italic;
+}
+#gallery span
+{
+	display: none;
+}
+#gallery a:hover span
+{
+	display: block;
+	position: absolute;
+	top: -15px;
+	left: 395px;
+	text-align: center;
+}
+/*footer*/
+#footer
+{
+	background-color: #FFFFFF;
+	margin-left: 170px;
+	margin-bottom: 0px;
+	font-size: .7em;
+	font-style: italic;
+	text-align: center;
+	padding: 20px;
+	clear: both;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>		
+		<title>Pacific Trails Resort</title>
+		<meta charset="utf-8">
+		<link href="styles/pacific.css" rel="stylesheet">
+		<style>
+			#main
+			{
+				padding-bottom: 30px;
+			}
+			p
+			{
+				margin-top: 15px;
+				margin-bottom: 25px;
+			}
+			.views
+			{
+				font-family: Georgia, sans-serif;
+				font-style: italic;
+				text-decoration: underline;
+				margin-left: 50px;
+				margin-bottom: -15px;
+			}
+			.kayak
+			{
+				display: inline-block;
+				position: absolute;		
+				top: 527px;
+				left: 750px;
+				background-image: url('images/kayak.jpg');
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position-x: center;
+
+				width: 300px;
+				height: 225px;		
+			}
+			#text
+			{
+				position: absolute;		
+				top: 710px;
+				left: 850px;
+				color: red;
+				font-style: italic;
+			}
+			#birds li	
+			{
+				width: 120px;
+				height: 110px;
+				padding-bottom:0px;
+				margin-left: -15px;
+			}
+			.bottom
+			{
+				margin-top: -10px;
+			}
+		</style>							
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1 id="header">Pacific Trails Resort</h1>
+			<div id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="yurts.html">Yurts</a></li>
+					<li><a href="lodge.html">Lodge</a></li>
+					<li><a href="activities.html">Activities</a></li>
+					<li><a href="dining.html">Dining</a></li>
+					<li><a href="reservations.html">Reservations</a></li>
+					<li><a href="shop.html">Shop</a></li>
+				</ul>
+			</div>
+			<div id="main">
+				<h2>Activities at Pacific Trails Resort</h2>				
+				<img src="images/trail.jpg" alt="trail" width="320" height="305">
+				<dl>			
+					<dt>Hiking</dt>
+						<p>
+							<span class="resort">Pacific Trails Resort</span> has five miles of hiking trails and is adjacent to a state park. Go it alone or join one of our daily guided hiking tours through the redwoods.
+						</p>															
+					<dt>Bird Watching</dt>
+						<p>
+							While any time is a good time for birdwatching at Pacific Trails we offer guided birdwatching trips at sunrise several times a week.
+						</p>
+
+					<dt>Kayaking</dt>
+						<p>
+							Ocean kayaks are available for our guest's daily use. Guided coastal excursions five times weekly.
+						</p>
+						<span class="kayak"></span>
+						<p id="text">Heaven's Gate</p>
+				</dl>
+				<p class="views">Bird-Watching at Pacific Trails</p>
+				<div id="gallery">
+					<ul id="birds">
+						<li>
+							<a href="images/birdPelican.jpg" onmouseover="document.getElementById('pelican').play();setVolume('pelican.mp3');">							
+								<img src="images/birdPelicanthumb.jpg" width="120" height="100" alt="White Pelican">
+								<span>
+									<img src="images/birdPelican.jpg" width="310" height="245" alt="White Pelican">
+									<br>
+									American White Pelican
+								</span>
+							</a>
+						</li>
+					    <li>
+							<a href="images/birdJay.jpg" onmouseover="document.getElementById('jay').play();setVolume('jay');">
+								<img src="images/birdJaythumb.jpg" width="120" height="100" alt="Steller's Jay">
+								<span>
+									<img src="images/birdJay.jpg" width="310" height="245" alt="Steller's Jay">
+									<br>
+									Steller's Jay
+								</span>
+							</a>
+						</li>
+					    <li class="bottom">
+							<a href="images/birdOriole.jpg" onmouseover="document.getElementById('oriole').play();setVolume('oriole');">
+								<img src="images/birdOriolethumb.jpg" width="120"   height="100" alt="Hooded Oriole">
+								<span>
+									<img src="images/birdOriole.jpg" width="310" height="245" alt="Hooded Oriole">
+									<br>
+									Hooded Oriole
+								</span>					
+							</a>							
+					    </li>
+					    <li class="bottom">
+							<a href="images/birdHummingbird.jpg" onmouseover="document.getElementById('humming').play();setVolume('humming');">							
+								<img src="images/birdHummingbirdthumb.jpg" width="120" height="100" alt="Anna's Hummingbird">												
+								<span>
+									<img src="images/birdHummingbird.jpg" width="310" height="245" alt="Anna's Hummingbird">									
+									<br>
+									Anna's Hummingbird
+								</span>
+							</a>							
+					    </li>
+					</ul>
+					<div id="audio">							
+						<audio id="pelican" 
+							<source src="media/pelican.mp3" type="audio/mpeg">
+						</audio>					
+						<audio id="jay"
+							<source src="media/jay.mp3" type="audio/mpeg">							
+						</audio>
+						<audio id="oriole"
+							<source src="media/hooded.mp3" type="audio/mpeg">							
+						</audio>															
+						<audio id="humming"
+							<source src="media/humming.mp3" type="audio/mpeg">							
+						</audio>
+					</div>
+				</div>
+			</div>
+			<div id="footer">			 
+				Copyright &copy;2020 Pacific Trails Resort<br />
+				<a href="mailto:pacifictrails@resorts.net">pacifictrails@resort.net</a>
+			</div>
+		</div>
+		<script type="text/javascript">		
+			// ----------------------------------------------------------------
+			// Name: setVolume()
+			// Abstract: Set the volume for the audio controls
+			// ----------------------------------------------------------------
+			function setVolume(audioID)
+			{
+				var audio = document.getElementById(audioID);
+				audio.volume = 0.2; 		
+			}						
+		</script>
+	</body>
+</html>

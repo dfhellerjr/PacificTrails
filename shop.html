@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>		
+		<title>Pacific Trails Resort</title>
+		<meta charset="utf-8">
+		<link href="styles/pacific.css" rel="stylesheet">
+		<style>
+			p
+			{
+				font-size: .7em;
+				font-weight: normal;
+				color: #666666;
+			}
+			.description
+			{
+				font-family: Verdana, Arial, sans-serif;
+				font-size: 1em;
+				color: #000033;
+			}
+			#main
+			{
+				margin-bottom: -30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1 id="header">Pacific Trails Resort</h1>
+			<div id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="yurts.html">Yurts</a></li>
+					<li><a href="lodge.html">Lodge</a></li>
+					<li><a href="activities.html">Activities</a></li>
+					<li><a href="dining.html">Dining</a></li>
+					<li><a href="reservations.html">Reservations</a></li>
+					<li><a href="shop.html">Shop</a></li>
+				</ul>
+			</div>
+			<div id="main">			
+				<h2>Shop at Pacific Trails</h2>
+				<img src="images/trailguide.jpg" alt="Trail guide" class="floatleft">
+				<h2 class="description">Pacific Trails Hiking Guide<h2>
+				<p>
+					Guided hikes for the best trails around <span class="resort">Pacific Trails Resort.</span>
+					Each hike includes a detailed route, distance, elevation change, and estimated time.
+					187 pages. Softcover. $19.95										
+				</p>
+				<form action="http://www.webdevfoundations.net/scripts/cart.asp" method="post">
+					<input type="hidden" name="desc1" id="desc1" value="Hiking Guide">
+					<input type="hidden" name="cost1" id="cost1" value="19.95">
+					<input type="submit" value="Add to Cart">
+				</form>
+				<br class="clear" />
+				<img src="images/yurtyoga.jpg" alt="Yurt Yoga" class="floatleft">
+				<h2 class="description">Yurt Yoga<h2>
+				<p>
+					Enjoy the restorative poses of yurt yoga in the comfort of your own<br />
+					home. Each pose is illustrated with several photographs, an<br /> 
+					explanation, and a description of the restorative benefits.<br />					
+					206 pages. Softcover. $24.95										
+				</p>
+				<form action="http://www.webdevfoundations.net/scripts/cart.asp" method="post">
+					<input type="hidden" name="desc2" id="desc2" value="Yurt Yoga">
+					<input type="hidden" name="cost2" id="cost2" value="24.95">
+					<input type="submit" value="Add to Cart">
+				</form>
+				<br class="clear" />
+			</div>
+			<div id="footer">
+				Copyright &copy;2020 Pacific Trails Resort<br />
+				<a href="mailto:pacifictrails@resorts.net">pacifictrails@resort.net</a>
+			</div>
+		</div>
+	</body>
+</html>
