@@ -168,7 +168,6 @@ label
 	float: left;
 	text-align: left;
 	display: inline-block;
-	xmargin-top: -5px;
 	width: 150px; 
 }
 input, textarea 
