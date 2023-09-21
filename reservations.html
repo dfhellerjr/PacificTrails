@@ -157,8 +157,11 @@
 						</tr>
 					</table>
 					<p class="included">
-						<span class="asterix">*</span>Daily in-yurt continental breakfast consisting of a basket of seasonally available, locally sourced fruits, freshly baked &nbsp;&nbsp;croissants/pastries, and one large carafe of our freshly brewed, custom-roasted Jamaican Blue Mountain coffee. A <br>&nbsp;&nbsp;genrous sample of our   house-crafted trail-mix is also provided each cay. A wider selection of
-						breakfast dishes is<br>&nbsp;&nbsp;also available at the Overlook Cafe (menu prices apply).						
+						<span class="asterix">*</span>Daily in-yurt continental breakfast consisting of a basket of seasonally available, 
+						locally sourced fruits, freshly baked &nbsp;&nbsp;croissants/pastries, and one large carafe of our freshly brewed, 
+						custom-roasted Jamaican Blue Mountain coffee. A <br>&nbsp;&nbsp;generous sample of our house-crafted trail-mix is 
+						also provided each day. A wider selection of breakfast dishes is<br>&nbsp;&nbsp;also available at the Overlook Cafe 
+						(menu prices apply).						
 					</p>				
 				</div>
 				<br />
@@ -175,8 +178,10 @@
 						<label for="txtLastName">Last Name:<span class="asterix">*</span></label>
 						<input type="text" name="txtLastName" id="txtLastName" size="30" maxlength= "50">					                                       
 						<label for="txtEMail">E-Mail:<span class="asterix">*</span></label>
-						<input type="email" name="txtEMail" id="txtEMail" size="30" maxlength= "50">	<label for="txtPhone" class="top">Phone:</label>
-						<input type="tel" name="txtPhone" id="txtPhone" size="30" maxlength= "50">		<label for="dtmDate">Arrival Date:<span class="asterix">*</span></label>
+						<input type="email" name="txtEMail" id="txtEMail" size="30" maxlength= "50">
+						<label for="txtPhone" class="top">Phone:</label>
+						<input type="tel" name="txtPhone" id="txtPhone" size="30" maxlength= "50">
+						<label for="dtmDate">Arrival Date:<span class="asterix">*</span></label>
 						<input type="date" name="dtmDate" id="dtmDate" size= "30">					
 						<label for="intNights" class="top">Nights:</label>
 						<input type="number" name="intNights" id="intNights" min="1" max="10" size="2" value="1">					
@@ -184,7 +189,7 @@
 						<input type="text" name="txtCardNumber" id="txtCardNumber" size="30" maxlength= "50">											
 						<label for="txtComments" class="top">Comments:</label>
 						<textarea name="txtComments" id="txtComments" rows="4" cols="30"></textarea>
-						<input type="button" name="btnSubmit" id="btnSubmit" value="Submit" 				onclick="IsValidData();">					
+						<input type="button" name="btnSubmit" id="btnSubmit" value="Submit" onclick="IsValidData();">					
 					</form>
 				</div>
 				<img id="checkin" src="images/checkin.jpg" width="310" height="350" alt="Check-In">
@@ -231,7 +236,8 @@
 						dialogBox.style.top = "275px";											
 						dialogBoxHead.innerHTML = "Pacific Trails Resort";
 						dialogBoxBody.innerHTML = dialog;
-						dialogBoxFoot.innerHTML = '<button onclick="m_Alert.ok()">OK</button>';			btnSubmit.style.disabled = "true";
+						dialogBoxFoot.innerHTML = '<button onclick="m_Alert.ok()">OK</button>';			
+						btnSubmit.style.disabled = "true";
 					}					
 					this.ok = function()
 					{												
