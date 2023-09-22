@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<link href="styles/pacific.css" rel="stylesheet">
 		<style type="text/css">
-			.asterix
+			.asterisk
 			{
 				color: red;
 				vertical-align: super;
@@ -136,7 +136,7 @@
 						<tr>
 							<td>Weekend Escape</td>
 							<td class="text">
-								Two breakfasts<span class="asterix">*</span>, a trail map, picnic snacks
+								Two breakfasts<span class="asterisk">*</span>, a trail map, picnic snacks
 							</td>
 							<td>2</td>
 							<td>$200</td>
@@ -144,7 +144,7 @@
 						<tr>
 							<td>Kayak Cruise</td>
 							<td class="text">
-								Two breakfasts<span class="asterix">*</span>, three hours of kayak rental daily, a trail map, picnic snacks
+								Two breakfasts<span class="asterisk">*</span>, three hours of kayak rental daily, a trail map, picnic snacks
 							</td>
 							<td>2</td>
 							<td>$250</td>
@@ -152,43 +152,44 @@
 						<tr>
 							<td>Zen Retreat</td>
 							<td class="text">
-								Four breakfasts<span class="asterix">*</span>, a trail map, a pass for daily yoga, picnic snacks
+								Four breakfasts<span class="asterisk">*</span>, a trail map, a pass for daily yoga, two passes for spa 
+								services, picnic snacks
 							</td>
 							<td>4</td>
-							<td>$375</td>
+							<td>$575</td>
 						</tr>
 						
 					</table>
 					<p class="included">
-						<span class="asterix">*</span>Daily in-yurt continental breakfast consisting of a basket of seasonally available, 
+						<span class="asterisk">*</span>Daily in-yurt continental breakfast consisting of a basket of seasonally available, 
 						locally sourced fruits, freshly baked &nbsp;&nbsp;croissants/pastries, and one large carafe of our freshly brewed, 
 						custom-roasted Jamaican Blue Mountain coffee. A <br>&nbsp;&nbsp;generous sample of our house-crafted trail-mix is 
-						also provided each day. A wider selection of breakfast dishes is<br>&nbsp;&nbsp;also available at the Overlook Bristro
+						also provided each day. A wider selection of breakfast dishes is<br>&nbsp;&nbsp;also available at the Overlook Bistro
 						(menu prices apply).						
 					</p>				
 				</div>
 				<br />
 				<div>					
-					<h3>Required information is marked with an asterix (<span>*</span>).</h3>			
+					<h3>Required information is marked with an asterisk (<span>*</span>).</h3>			
 					<p class="deposit">
 						A deposit of $100.00 is required for all on-line reservations. Deposit 
 						is non-refundable unless your reservation is cancelled at least 48 hours 
 						prior to your scheduled arrival date.
 					</p>					
 					<form name="frmReservations" id="frmReservations" action="" method="post">
-						<label for="txtFirstName">First Name:<span class="asterix">*</span></label>
+						<label for="txtFirstName">First Name:<span class="asterisk">*</span></label>
 						<input type="text" name="txtFirstName" id="txtFirstName" size="30" maxlength= "50">					
-						<label for="txtLastName">Last Name:<span class="asterix">*</span></label>
+						<label for="txtLastName">Last Name:<span class="asterisk">*</span></label>
 						<input type="text" name="txtLastName" id="txtLastName" size="30" maxlength= "50">					                                       
-						<label for="txtEMail">E-Mail:<span class="asterix">*</span></label>
+						<label for="txtEMail">E-Mail:<span class="asterisk">*</span></label>
 						<input type="email" name="txtEMail" id="txtEMail" size="30" maxlength= "50">
 						<label for="txtPhone" class="top">Phone:</label>
 						<input type="tel" name="txtPhone" id="txtPhone" size="30" maxlength= "50">
-						<label for="dtmDate">Arrival Date:<span class="asterix">*</span></label>
+						<label for="dtmDate">Arrival Date:<span class="asterisk">*</span></label>
 						<input type="date" name="dtmDate" id="dtmDate" size= "30">					
 						<label for="intNights" class="top">Nights:</label>
 						<input type="number" name="intNights" id="intNights" min="1" max="10" size="2" value="1">					
-						<label for="txtCardNumber">Credit Card #:<span class="asterix">*</span></label>
+						<label for="txtCardNumber">Credit Card #:<span class="asterisk">*</span></label>
 						<input type="text" name="txtCardNumber" id="txtCardNumber" size="30" maxlength= "50">											
 						<label for="txtComments" class="top">Comments:</label>
 						<textarea name="txtComments" id="txtComments" rows="4" cols="30"></textarea>
@@ -271,9 +272,10 @@
                     var frmReservations = document.getElementById("frmReservations");
 					var intCreditCardNumber = document.getElementById("txtCardNumber");					
 													
-					// Trim all text boxes & rmove spaces from within credit card number
+					// Trim all text boxes & remove spaces from within credit card number
                     TrimAllFormTextBoxes(frmReservations);										
-					intCreditCardNumber = intCreditCardNumber.value.split(" ").join("");																			                    
+					intCreditCardNumber = intCreditCardNumber.value.split(" ").join("");	
+
 					// VALIDATE FIELDS
 					// First name
                     if (frmReservations.txtFirstName.value == "")
